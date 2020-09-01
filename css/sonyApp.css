@@ -1,0 +1,615 @@
+
+.addedIndex{
+	padding-bottom: 20px;
+	margin-bottom 150em;
+	color: red;
+}
+
+#hymnNo{
+	font-size: auto;
+	margin-left: none;
+}
+
+#displayHymn{
+	list-style-type: none;
+	background-image:radial-gradient(coral, white);
+	padding: 10px;
+	margin-top: 15px;
+	height: auto;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 120%;
+	border:2px solid #FFFFFF; border-radius:20px;
+	box-shadow: 10px 10px 10px grey;
+
+}
+#homeSearch{
+	margin-top: 1px;
+	text-align:center;
+	width: auto;
+	padding: 5px;
+	color: black;
+}
+
+.noTextShadow{
+	text-shadow: none;
+}
+
+#suSongTitle{
+	text-align:center;
+	background-color:#B0C4DE;
+	height: auto;
+	padding: 5px;
+	color: #006400;
+	font-size: 20px;
+}
+.songDisplayBtn1{
+	width: 30%;
+	padding: 5px;
+	background-color: blue;
+}
+#homeHead2{
+	margin-top: 1px;
+}
+#homeHead3{
+	text-align: center;
+}
+#add2Favourite1{
+	width: 70%;
+	text-align: left;
+}
+#songTune1{
+	width: 70%;
+	text-align: left;
+}
+.panelDesign1{
+	width: 70%;
+	text-align: left;
+}
+.createElmtList2{
+}
+.favList{
+	display: inline;
+}
+.favClass2{
+	float: right;
+	display: inline;
+}
+
+.favClassList1{
+	width: 100px;
+}
+.favClass11{
+	width: 100px;
+}
+.testDelete{
+	float: right;
+}
+.favListContainer{
+	padding-left: 40px;
+	padding-right: 30px;
+
+}
+#favListContainer2{
+	padding-left: 40px;
+	padding-right: 30px;
+	text-align: left;
+
+
+}
+#songNoSearchDiv{
+ 	width: auto;
+}
+#songNoSearchGo{
+	width: auto;
+}
+
+#dailyPass{
+	text-align: center;
+	text-shadow: none;
+	color: brown;
+	font-weight: bold;
+}
+#dailyPassDiv{
+	background-color: #ebebeb;
+	text-shadow: none;
+	border:2px solid #FFFFFF; border-radius:20px;
+	height: 150px;
+	background-image: url("../res/icon/sulooAP.png");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+#homeTopImageDiv{
+	text-shadow: none;
+	font-weight: bold;
+	width: auto;
+	margin-top: 5px;
+	background-color: grey;
+	border:2px solid #FFFFFF; border-radius:20px;
+	padding: 5px;
+}
+#homeTopImage{
+	width: auto;
+}
+.testin{
+	float: right;
+}
+.controls1{
+	float: right;
+}
+.controls2{
+	float: left;
+	height: 25px;
+}
+#homeFavCount{
+	text-shadow: none;
+	margin: none;
+	color: green;
+	font-weight: bold;
+	float: right;
+	min-width: 25px;
+	height: 15px;
+	padding: 3px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #D3D3D3;
+	border:2px solid #FFFFFF; border-radius:10px;
+}
+#srchByNoDivBtn{
+	margin-top: 8px;
+	border:2px solid grey; border-radius:10px;
+}
+
+#text-roller{
+	position: relative;
+	background-color: #222;
+	color: #fff;
+	white-space: nowrap;
+}
+
+
+#homeHeaderBar{
+	background-color: #2c4f28;
+	text-shadow: none;
+	color: white;
+}
+#homeFooterBar{
+	background-color: #2c4f28;
+	text-shadow: none;
+	color: white;
+}
+#homeHeaderIconL{
+	background-color: #2c4f28;
+}
+#allSearchDiv{
+	border:2px solid #FFFFFF; border-radius:10px;
+	height: 100px;
+	background-image: linear-gradient(#bd9e95, #FFE4C4);
+
+}
+#songNoSearchBtn{
+	background-color: #2c4f28;
+	height: 
+}
+#homeBody{
+	background-image: linear-gradient(#bd9e95, #FFE4C4);
+	/*background-image: url("../res/icon/backgrd1.gif");*/
+}
+.bottomA{
+	font-weight: 900;
+	font-size: 1.9em;
+}
+#hPanel-hm{
+	height:50px; 
+	text-align: left; 
+	font-weight: bolder;
+	font-size: 30px; 
+	text-shadow: none;
+	padding-left: 2px;
+	color: white;
+	background-color: #2E8B57;
+	background-image: url("../res/icon/rotate2.gif");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+#hPanel-SU{
+	background-color: silver;
+	text-shadow: none;
+}
+#hPanel-Disp{
+	background-color: silver;
+	text-shadow: none;
+}
+#hPanel-Fav{
+	background-color: silver;
+	text-shadow: none;
+}
+#hPanel-Abt{
+	background-color: silver;
+	text-shadow: none;
+}
+#hPanel-Set{
+	background-color: silver;
+	text-shadow: none;
+}
+#hPanel-Sup{
+	background-color: silver;
+	text-shadow: none;
+}
+#myHome{
+	background-color: #556B2F;
+	text-shadow: none;
+	color: white;
+}
+#addRuns{
+	background-color: #556B2F;
+	text-shadow: none;
+	color: white;
+}
+#headerAbout{
+	background-color: #2c4f28;
+	text-shadow: none;
+	color: white;
+}
+
+#headerAboutIconL{
+	background-color: #2c4f28;
+}
+#footerAbout{
+	background-color: #2c4f28;
+	text-shadow: none;
+	color: white;
+}
+#pg2Header{background-color: #2c4f28; text-shadow: none; color: white;}
+#pg2Main{background-image: linear-gradient(#bd9e95, #FFE4C4);}
+#pg2HeaderBtnL{background-color: #2c4f28;}
+#pg2HeaderBtnR{background-color: #2c4f28;}
+#pg2Footer{background-color: #2c4f28; text-shadow: none; color: white;}
+
+#pg3Header{background-color: #2c4f28; text-shadow: none; color: white;}
+#pg3Main{ background-image:linear-gradient(#bd9e95, #FFE4C4, #FFFFFF);}
+#pg3MainSub{height: 100%; background-image:linear-gradient(#bd9e95, #FFE4C4, #FFFFFF);}
+#pg3HeaderBtnL{background-color: #2c4f28;}
+#pg3HeaderBtnR{background-color: #2c4f28;}
+#pg3Footer{background-color: #2c4f28; text-shadow: none; color: white;}
+
+#hDisplayPanel{background-color: silver; text-shadow: none; color: white;}
+
+#toHomeFromSD{background-color: grey; text-shadow: none; color: white;} 
+#toIndexFromSD {background-color: grey; text-shadow: none; color: white;}
+#add2Favourite {background-color: grey; text-shadow: none; color: white;}
+#showMyFavFromSD {background-color: grey; text-shadow: none; color: white;}
+#songTune{background-color: grey; text-shadow: none; color: white;}
+
+#pg4Header{background-color: #2c4f28; text-shadow: none; color: white;}
+#pg4Main{ background-image:linear-gradient(#bd9e95, #FFE4C4, #FFFFFF);}
+#pg4MainSub{height: 100%; background-image:linear-gradient(#bd9e95, #FFE4C4, #FFFFFF);}
+#pg4HeaderBtnL{background-color: #2c4f28;}
+#pg4HeaderBtnR{background-color: #2c4f28;}
+#pg4Footer{background-color: #2c4f28; text-shadow: none; color: white;}
+#clearAllFav{background-color: brown; text-shadow: none; color: white;}
+
+#pg7Header{background-color: #2c4f28; text-shadow: none; color: white;}
+#pg7Main{ background-image:linear-gradient(#bd9e95, #FFE4C4, #FFFFFF);}
+#pg7HeaderBtnL{background-color: #2c4f28;}
+#pg7HeaderBtnR{background-color: #2c4f28;}
+#pg7Footer{background-color: #2c4f28; text-shadow: none; color: white;}
+#pg7devBtns{background-image:linear-gradient(#FFFFFF, #FFE4C4, #bd9e95);}
+#addMySong{margin-left: 0.8em; background-color: steelblue; text-shadow: none; color: white; font-weight: bold;}
+#clearMySong{background-color: maroon; text-shadow: none; color: white; font-weight: bold;}
+#storeMySong{background-color: lime; text-shadow: none; color: white; font-weight: bold;}
+#pg7TextareaLabel{font-size: 12px; margin-left: 10px;}
+#pg7TitleLabel{font-size: 12px; font-weight: bold; margin-bottom: 0px; margin-left: 10px; text-decoration: underline;}
+#pg7SoloLabel{font-size: 12px; font-weight: bold; margin-bottom: 0px; margin-left: 10px; text-decoration: underline;}
+
+#pg8Header{background-color: #2c4f28; text-shadow: none; color: white;}
+#pg8Main{ background-image:linear-gradient(#bd9e95, #FFE4C4, #FFFFFF);}
+#pg8HeaderBtnL{background-color: #2c4f28;}
+#pg8HeaderBtnR{background-color: #2c4f28;}
+#pg8Footer{background-color: #2c4f28; text-shadow: none; color: white;}
+
+#pg9Header{background-color: #2c4f28; text-shadow: none; color: white;}
+#pg9Main{ background-image:linear-gradient(#bd9e95, #FFE4C4, #FFFFFF);}
+#pg9HeaderBtnL{background-color: #2c4f28;}
+#pg9HeaderBtnR{background-color: #2c4f28;}
+#pg9Footer{background-color: #2c4f28; text-shadow: none; color: white;}
+#page9SongTitle{ text-align:center; background-color:#B0C4DE;	height: 2em; padding: 5px;	color: #006400; font-size: 18px;}
+#page9HeaderTitle {text-align:center; height: 2.5em; line-height: 2.5em;}
+
+.songTitleIndexClass{
+	padding-left: 40px;
+	padding-right: 30px;
+
+}
+#songTitleIndexCont{
+	padding-left: 40px;
+	padding-right: 30px;
+	text-align: left;
+	height: 2em;
+}
+.mySongCreatedCont{
+	list-style-type: none;
+	background-image:radial-gradient(coral, white);
+	padding: 5px;
+	padding-left: 10px;
+	margin-top: 1px;
+	/*height: 10em;*/
+	min-height: 8em;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 80%;
+	border:2px solid #FFFFFF; border-radius:20px;
+	box-shadow: 10px 10px 10px grey;
+}
+
+.pg9SongDisplayCont{
+	list-style-type: none;
+	background-image:radial-gradient(coral, white);
+	padding: 5px;
+	padding-left: 10px;
+	margin-top: 1px;
+	/*height: 10em;*/
+	height: auto;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	line-height: normal;
+	border:2px solid #FFFFFF; border-radius:20px;
+	box-shadow: 10px 10px 10px grey;
+}
+
+#mySongTitle{
+	text-align:center;
+	background-color:#B0C4DE;
+	height: 2em;
+	padding: 5px;
+	color: #006400;
+	font-size: 18px;
+}
+
+
+
+#aboutPageBody{
+	background-image: linear-gradient(#bd9e95, #FFE4C4, #ffffff);
+	height: 
+	/*background-image: url("../res/icon/backgrd1.gif");*/
+}
+#aboutTopDiv{
+	background-image: linear-gradient(#bd9e95, #FFE4C4);
+	height: 70px;
+	margin-top: 0px;
+	border:2px solid #FFFFFF; border-radius:10px;
+	font-size: 18px;
+	box-shadow: -1px -2px 5px grey
+}
+
+#aboutTopImage{
+	float: right;
+	width: 100px;
+	height: 40px;
+}
+#aboutText1{
+	text-shadow: none;
+	border:2px solid #FFFFFF; border-radius:10px;
+	padding: 10px;
+	padding-top: 3px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+#aboutText2{
+	text-shadow: none;
+	border:2px solid #FFFFFF; border-radius:10px;
+	padding: 10px;
+	padding-top: 3px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+
+.word{
+  width: auto;
+  height: 50px;
+  position: relative;
+  display: inline;
+  font-size:18px;
+  font-weight: bold;
+  text-shadow: none;
+  animation: word 25s infinite;
+}
+@keyframes word {
+  0%  {top: 0px; left: 1000px;color: grey; opacity: 0.3}
+  10%   {top: 0px; left: 700px; color: coral; opacity: 0.5}
+  20%   {top: 0px; left: 500px; color: blue; opacity: 0.7}
+  30%   {top: 0px; left: 100px; color: green; opacity: 0.9}
+  40%   {top: 0px; left: 0px; color: red; opacity: 1; }
+  50%   {top: 0px; left: 0px; color: red; opacity: 0.5;}
+  100%   {top: 0px; left: -1000px; color: red; opacity: 0.1}
+}
+
+.word2{
+  width: auto;
+  height: 50px;
+  position: relative;
+  display: inline;
+  font-size:18px;
+  font-weight: bold;
+  text-shadow: none;
+  animation: word2 25s infinite;
+}
+@keyframes word2 {
+  0%  {top: 0px; left: 1000px;color: grey; opacity: 0.3}
+  10%   {top: 0px; left: 700px; color: coral; opacity: 0.5}
+  20%   {top: 0px; left: 500px; color: blue; opacity: 0.7}
+  30%   {top: 0px; left: 100px; color: green; opacity: 0.9}
+  40%   {top: 0px; left: 0px; color: red; opacity: 1; }
+  50%   {top: 50px; left: 100px; color: purple; opacity: 1;}
+  60%   {top: 100px; left: 0px; color: green; opacity: 0.9; text-shadow: 20px 10px 2px white}
+  70%   {top: -100px; left: 0px; color: blue; opacity: 0.7; text-shadow: 20px 10px 2px goldenrod}
+  80%   {top: -200px; left: 50px; color: coral; opacity: 0.5}
+  90%   {top: -300px; left: 70px; color: grey; opacity: 0.3}
+  100%   {top: -500px; left: 200px; color: silver; opacity: 0.1}
+}
+
+.mAnimate{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: mAnimate 25s infinite;
+}
+
+
+@keyframes mAnimate {
+  0%   {top: -600px; left: 50%;color: red;} /*Starning Point.*/
+  40%   {top: -300px; left: 100%; color: green;} /*Move down to 100 & to the Right-100.*/
+  80%   {top: 300px; left: 0%;color: purple;}
+  100%   {top: -600px; left: 50%;color: red;}
+}
+.star11{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: star11 25s infinite;
+}
+
+
+@keyframes star11 {
+  0%   {top: -600px; left: 0%;} /*Starning Point.*/
+  10%   {top: 0px; left: 40%; color: blue; font-size:25px; opacity: 0.6;} 
+  30%   {top: 0px; left: 10%; opacity: 1; color: red; font-size:50px; text-shadow: 20px 20px 2px green}
+  60%   {top: 10px; left: 10%; opacity: 0.7; color: pink; font-size:30px;} /*Move down to 100 & to the Right-100.*/
+  80%   {top: 100px; left: 70%;color: grey; opacity: 0.4;  font-size:20px;} /*Max top: 400 */
+  100%   {top: 400px; left : 0%;color: purple; opacity: 0.1; text-shadow: 20px 20px 2px white}
+}
+
+.star12{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: star12 25s infinite;
+}
+
+
+@keyframes star12 {
+  0%   {top: -600px; left: 90%;} /*Max top: 200*/
+  10%   {top: -100px; left: 20%; color: goldenrod; font-size:25px; opacity: 1;} 
+  30%   {top: 0px; left: 10%; opacity: 0.7}
+  60%   {top: 50px; left: 50%; opacity: 1; color: white; font-size:60px; text-shadow: 20px 50px 2px steelblue} /*Move down to 100 & to the Right-100.*/
+  80%   {top: 200px; left: 70%;color: grey; opacity: 0.4;  font-size:25px;} /*Max top: 400 */
+  100%   {top: -600px; left : 50%;color: purple; opacity: 0.1; text-shadow: 20px 20px 2px white}
+}
+
+.star13{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: star13 40s infinite;
+}
+
+
+@keyframes star13 {
+  0%   {top: -500px; left: 10%;} /*Max top: 200*/
+  10%   {top: -200px; left: 40%; color: red; opacity: 0.5}
+  30%   {top: -100px; left: 90%; color: red; opacity: 0.7} 
+  60%   {top: -50px; left: 10%; color: pink; opacity: 1 text-shadow: 20px 20px 2px white}
+  80%   {top: 0px; left: 50%; opacity: 0.5; color: white; } 
+  100%   {top: 0px; left: 70%;color: grey; opacity: 0.4;  font-size:25px;}
+}
+
+
+.note11{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: note11 25s infinite;
+}
+
+
+@keyframes note11 {
+  0%   {top: -600px; left: 50%;color: red;} /*Starning Point.*/
+  40%   {top: -300px; left: 100%; color: green;} /*Move down to 100 & to the Right-100.*/
+  80%   {top: 250px; left: 0%;color: purple;}
+  100%   {top: -600px; left: 50%;color: red;}
+}
+
+.note12{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: note12 25s infinite;
+}
+
+
+@keyframes note12 {
+  0%   {top: -600px; left: 50%;color: red;} /*Starning Point.*/
+  40%   {top: -300px; left: 100%; color: green;} /*Move down to 100 & to the Right-100.*/
+  80%   {top: 80px; left: 0%;color: purple;}
+  100%   {top: -600px; left: 50%;color: red;}
+}
+
+.note31{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: note31 25s infinite;
+}
+
+
+@keyframes note31 {
+  0%   {top: -600px; left: 50%;color: red;} /*Starning Point.*/
+  40%   {top: -300px; left: 100%; color: green;} /*Move down to 100 & to the Right-100.*/
+  80%   {top: 300px; left: 0%;color: purple;}
+  100%   {top: -600px; left: 50%;color: red;}
+}
+
+.note32{
+  width: auto;
+  height: 100%;
+  position: relative;
+  font-size:18px;
+  font-weight: bold;
+  color: coral;
+  opacity: 0.3;
+  animation: note32 25s infinite;
+}
+
+
+@keyframes note32 {
+  0%   {top: -600px; left: 50%;color: red;} /*Starning Point.*/
+  40%   {top: -300px; left: 100%; color: green;} /*Move down to 100 & to the Right-100.*/
+  80%   {top: 100px; left: 0%;color: purple;}
+  100%   {top: -600px; left: 50%;color: red;}
+}

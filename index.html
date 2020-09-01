@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+        <link rel="stylesheet" href="css/themes/sonyAppTheme1.min.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+		-->
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+        <link rel="stylesheet" type="text/css" href="css/sonyApp.css">
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/sonyApp.js"></script>
+        <script type="text/javascript" src="js/sonyAppB.js"></script>
+        <script type="text/javascript" src="js/text-roller.js"></script>
+        <script type="text/javascript">
+        	$(document).on('mobileinit', function(){
+        		$.mobile.defaultPageTransition = 'slidefade';
+        	});
+        	$(document).ready(function(){populateHymnIndexFun()
+        	});
+        	$(document).ready(function(){showMyFavs()});
+        	$(document).ready(function(){fadingVerses()});
+        	
+        </script>
+        <script src="js/jquery.mobile-1.4.5.js"></script>
+    </head>
+    <body id="body">
+
+<!-- Start of first page -->
+<div data-role="page" id="home">
+
+<!-- panel -->
+<div data-role="panel" data-display="push" data-count-theme="a" id="nav-panel" id="favouriteSongsList2" style="background-color: #D3D3D3">
+	<!--<h3 id="homePanelHead"> SU Songs<a data-icon="home" href="#" data-rel="close"></h3>-->
+	<ul data-role="listview">
+		<li data-icon="home" ><a id="hPanel-hm" href="#" data-rel="close" >Home</a></li>
+		<hr>
+		<li data-icon="bullets" ><a id="hPanel-SU" href="#page2" >SU Songs Index</a></li>
+		<hr>
+		<li data-icon="heart"><a href="#page4" id="hPanel-Fav">My Favourites<span id="homeFavCount">0</span></a></li>
+		<hr>
+		<li data-icon="eye"><a href="#page3" id="hPanel-Disp">Display Screen</a></li>
+		<hr>
+		<li data-icon="info"><a href="#page6" id="hPanel-Abt" >About</a></li>
+		<hr>
+		<li data-icon="gear"><a href="#page5" id="hPanel-Set" >Settings</a></li>
+		<hr>
+
+		<div  data-role="collapsible" data-colapsed="true" id="hPanel-Sup">
+			<h4 >Developer</h4>
+			<ul data-role="listview">
+				<li data-icon="gear"><a href="#page7">Create Songs</a></li>
+				<li data-icon="eye"><a href="#page7">View My Songs</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div  data-role="collapsible" data-colapsed="true" id="hPanel-Sup">
+			<h4 >Support</h4>
+			<ul data-role="listview">
+				<li data-icon="mail"><a href="mailto:adesung2005@yahoo.co.uk">Send Feedback</a></li>
+				<li data-icon="phone"><a href="https://api.whatsapp.com/send?phone=2348064205333">Contact us</a></li>
+				<li data-icon="forward"><a href="#" >Share this app</a></li>
+				<li data-icon="star"><a href="#" >Rate this app</a></li>
+			</ul>
+		</div>
+		<hr>
+	</ul>
+</div><!-- /panel -->
+
+	<div data-role="header" data-position="fixed" id="homeHeaderBar">
+		<h1 class="noTextShadow">Scripture Union Songs</h1>
+		<a href="#nav-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext" id="homeHeaderIconL">bars</a>
+		<a id="songNoSearchBtn" class="ui-btn ui-icon-search ui-btn-icon-notext" >search</a>
+	<div data-role="navbar">
+	   	<ul>
+	     <li><a  id="myHome" href="#home" data-icon="home">Home</a></li>
+	     <li><a href="#add" data-icon="plus" id="addRuns">Add Run</a></li>
+	   	</ul>    
+ 	</div>
+</div><!-- /header -->
+
+
+<!--<div id="allSearchDiv" allSearchDiv-->
+ 	<div id="srch-TitleNo" data-role="navbar" style="display: none">
+	   	<ul>
+	   	<li><a class="ui-icon-search ui-btn-icon-right srchTitleNo" id="srch-Title" href="#page2">Search by Title</a></li>
+	   	<li><a class="ui-icon-bullets ui-btn-icon-right srchTitleNo" id="srch-No">Search by Song Number</a></li>
+	   	</ul>     
+ 	</div><!-- /Search Naviation -->
+
+ 	<div id="srchByNoDiv" class="srchByNoDivClass" data-role="navbar" style="display: none"><!-- Search By Number Naviation  -->
+ 		<ul>
+	   	<li><input type="search" placeholder="Search Song By Number" id="srchByNoDivInput"></input><li><a class="ui-icon-search ui-btn-icon-right" id="srchByNoDivBtn" onclick="songNoSearchFun()">Search By Number</a></li>
+	   	</ul>  
+ 	<!-- /Search By Number Naviation -->
+
+</div><!-- /allSearchDiv-->
+
+
+<div role="main" class="ui-content" id="homeBody">
+		<!--<em>Thy Word is a Lamp unto my Feet and a light unto my Path. Ps.119:105</em>-->
+
+		<div class="word word1" >Thy</div>
+		<div class="word word2">WORD</div>
+		<div class="word word3">is a</div>
+		<div class="word word2">LAMP</div>
+		<div class="word word5">unto my Feet</div>
+		<div class="word word6">and a </div>
+		<div class="word word2">LIGHT</div>
+		<div class="word word">unto my Path</div>
+		<br>
+		<br>
+     	<div id="dailyPassDiv">
+     	<p id="dailyPass">“And we know that all things work together for good to them that love God, to them who are the called according to his purpose.” <br>Romans 8:28</p>
+        </div>
+
+
+
+ 
+<br> 
+<div class="mAnimate star11" style='font-size:50px;'>&#11088;1</div>
+<div class="mAnimate note31" style='font-size:50px;'>&#127926;1</div>
+<div class="mAnimate note11" style='font-size:50px;'>&#127925;1</div>
+<div class="mAnimate star12" style='font-size:50px;'>&#11088;2</div>
+<div class="mAnimate note32" style='font-size:50px;'>&#127926;2</div>
+<div class="mAnimate note12" style='font-size:50px;'>&#127925;2</div>
+<div class="mAnimate star13" style='font-size:50px;'>&#11088;3</div>
+
+     	
+</div><!-- /content -->
+	
+	
+	<div data-role="footer" data-position="fixed" id="homeFooterBar">
+	<h4>Scripture Union Nigeria</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of second page -->
+<div data-role="page" data-position="right" id="page2">
+
+<div data-role="panel" data-position="right" id="mypanel">
+    <p> I am A Panel! </p>
+    <a href="#page5" class="ui-btn">GoTo Settings</a>
+</div><!-- /panel -->
+
+	<div data-role="header" id="pg2Header">
+		<a data-direction="reverse" href="#" onclick="go2Prev()" class="ui-btn ui-icon-back ui-btn-icon-notext" id="pg2HeaderBtnL">back</a>
+		<h1>Hymn Index</h1>
+		<a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-notext" id="pg2HeaderBtnR">bars</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" id="pg2Main">
+		<form>
+	    <input id="filter-for-listview" data-type="search" Placeholder="	Type to search...">
+		</form>
+		<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview" id="hymnIndices">
+			
+		</ul>
+		<a href="#page2_1" class="ui-btn">Sub-Gallery</a>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed" id="pg2Footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- Start of second-sub page -->
+<div data-role="page" id="page2_1">
+
+	<div data-role="header">
+		<h1>Sub-Gallery</h1><a data-direction="reverse" href="#page2" class="ui-btn"><<</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content"> 
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+	
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of Third Page --><!-- Song Display Screen -->
+<div data-role="page" id="page3" >
+
+<div data-role="panel" data-position="right" id="hDisplayPanel">
+	<a href="#home" id="toHomeFromSD" class="ui-btn ui-icon-home ui-btn-icon-right panelDesign1">Back to Home</a>
+	<a href="#page2" id="toIndexFromSD" class="ui-btn ui-icon-back ui-btn-icon-right panelDesign1">Back to Songs Index</a>
+    <a href="#" id="add2Favourite" onclick="addFav(); showMyFavs()" class="ui-btn ui-icon-star ui-btn-icon-right panelDesign1" data-rel="close">Add to My Favourite</a>
+    <a href="#page4" id="showMyFavFromSD" class="ui-btn ui-icon-eye ui-btn-icon-right panelDesign1">Show My Favourites</a>
+    <a id="songTune" onclick="alert('Coming Soon')" class="ui-btn ui-icon-audio ui-btn-icon-right panelDesign1" data-rel="close">Play Song Tune</a>
+    
+</div><!-- /panel -->
+
+	<div data-role="header" data-position="fixed" id="pg3Header">
+		<h4 id="hymnNo">Song No 1</h4><a data-direction="reverse" href="#" class="ui-btn ui-icon-recycle ui-btn-icon-notext" onclick="sheffleSong()" id="pg3HeaderBtnL">recycle</a>
+		<div style="display: none;" id="hymnNoIndex">1</div>
+
+		<a href="#hDisplayPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext" id="pg3HeaderBtnR">bars</a>
+
+		<div id="suSongTitle">All, all, all of my heart for Jesus</div>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" id="pg3Main"> <!-- SCREEN DISPLAY -->
+		<div class="hymnList">
+			<div id="displayHymn">
+				<p>All, all, all of my heart for Jesus,</p>
+				<p>My wonderful Saviour.</p>
+				<p>Just as it is, for ever it's</p>
+				<p>Yes, all of my life for Jesus.</p>
+			</div>
+		</div>
+		<div id="pg3MainSub"> 
+		</div>
+			
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" id="pg3Footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+<!-- Start of forth page. My Favourites -->
+<div data-role="page" id="page4">
+
+	<div data-role="header" id="pg4Header">
+		<h1>My Favourites</h1><a data-direction="reverse" href="#home" class="ui-btn ui-icon-arrow-l ui-btn-icon-notext" id="pg4HeaderBtnL">arrow-l</a>
+		<a href="#page3" class="ui-btn ui-icon-back ui-btn-icon-notext" id="pg4HeaderBtnR">back</a>
+	</div><!-- /header -->
+	<a href="#" id="clearAllFav" onclick="clearAllFavFun()" class="ui-btn">Clear All Favourites</a>
+	
+
+	<div role="main" class="ui-content" id="pg4Main"> 
+		<div id="favouriteSongsListHead">
+
+			<li id="favTest5" class="ui-btn" href="#home">I I have a fried who will every need supply.</a><div class="favClassList"><a>Hello</a></li>
+			<!--
+				window.location.href="index.html"
+				<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview" id="favouriteSongsListHead">
+				<li><a id="favouriteSongsHome22" class="ui-btn ui-icon-star ui-btn-icon-right panelDesign1">I am Here</a></li>-->
+		</div>
+	</div><!-- /Main content -->
+
+	<div data-role="footer" data-position="fixed" id="pg4Footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+
+<!-- Start of Fifth Page Settings Page-->
+<div data-role="page" id="page5">
+
+<div data-role="panel" id="menuPanel">
+    <p> Menu Panel! </p>
+</div>
+
+	<div data-role="header">
+		<h1>Settings</h1>
+		<a href="#menuPanel" data-direction="reverse" class="ui-btn ui-icon-bars ui-btn-icon-notext">bars</a>
+		<a href="#home" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-notext">home</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		
+		
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of Sixt Page- About -->
+<div data-role="page" id="page6">
+
+<div data-role="panel" id="pg6MenuPanel">
+    <p> Menu Panel! </p>
+</div>
+
+	<div data-role="header" id="headerAbout">
+		<h1>About</h1>
+		<a id="headerAboutIconL" href="#" onclick="go2Prev()" data-direction="reverse" class="ui-btn ui-icon-back ui-btn-icon-notext">back</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" id="aboutPageBody">
+		<div id="aboutTopDiv"><h3 id="aboutTop">Scripture Union Songs <img id="aboutTopImage" alt="Mail" src="res/icon/rotate2.gif"/></h3>
+		</div>
+
+		<div id="aboutText1">
+		<p>"Speak to one another in Psalms and Hymns and Spiritual Songs, singing and making melody in your heart to the Lord" - Eph.5:19.</p>
+
+		<p>Spiritual Songs haven the abiity to teach us, and admonish us, and to provoke our heart to worship our Saviour with thankfuless.</p>
+		</div>
+		
+		<div id="aboutText2">
+		<p>"This app is based on the Scripture Union Songs book. It features find song by number or by title and indexes</p>
+
+		<p>Frequently used songs can be added to favourite for quick access.</p>
+		<p>May God's blessings shower on us as we sing songs of praise and worship to Him in Jesus names.</p>
+		</div>
+		
+		
+	</div><!-- /content -->
+
+	<div id="footerAbout" data-role="footer" data-position="fixed">
+		<h4>Scripture Union Nigeria</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of Page7 Developer-->
+<div data-role="page" id="page7" >
+
+<div data-role="panel" data-position="right" id="page7Panel">
+	<a href="#home" id="toHomeFromSD" class="ui-btn ui-icon-home ui-btn-icon-right panelDesign1">Back to Home</a>
+	<a href="#page2" id="toIndexFromSD" class="ui-btn ui-icon-back ui-btn-icon-right panelDesign1">Back to Songs Index</a>
+    
+</div><!-- /panel -->
+
+	<div data-role="header" data-position="fixed" id="pg7Header">
+		<h4 id="mySong">Develop My Own Song Book</h4><a data-direction="reverse" href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext" id="pg7HeaderBtnL">home</a>
+
+		<a href="#page8" class="ui-btn ui-icon-bars ui-btn-icon-notext" id="pg7HeaderBtnR" onclick="popuateMyAddedSongs()">bars</a>
+		<div id="mySongTitle">Preview my Song Title</div>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" id="pg7Main"> <!-- SCREEN DISPLAY -->
+		<div id="mySongCreatedContP">
+			<div class="mySongCreatedCont">
+				<div id="mySongCreated">
+					<p> Preview my Song Solo </p>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<div class="createSongCont">
+			<form id="createSong">
+				<label id="pg7TitleLabel">My Song Title</label>
+				<input type="text" name="text-3" data-clear-btn="true" id="writeTitle" placeholder="Type your song title here">
+				<label for="textarea-1" id="pg7SoloLabel">My Song Solo</label>
+				<div id="pg7TextareaLabel">
+					For better display of my song Solo, add ":" at the beginning of each sentence of the song. E.g: <br>
+					:I don't care what church you belong to, etc. 
+				</div>
+				<textarea name="textarea-1" id="writeSolo" placeholder="Type your song solo here"></textarea>
+			</form>
+			<hr>
+		</div>
+		<div id="dummyDiv" style="display: none;">
+			<div class="dummyClass"></div>
+			<div class="dummyClass"></div>
+			<div class="dummyClass"></div>
+			<div class="dummyClass"></div>
+		</div>
+			
+	</div><!-- /content -->
+		
+	<div data-role="footer" data-position="fixed" id="pg7Footer">
+		<div id="pg7devBtns">
+			<a href="#" class="ui-btn ui-btn-inline ui-icon-eye ui-btn-icon-left" id="addMySong">Preview</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left" id="clearMySong" onclick="clearMySong()">Clear</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-icon-recycle ui-btn-icon-left" id="undoClearSong" onclick="recallMySong()">Undo</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left" id="storeMySong" onclick="addMySong()">Save</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left" id="revContents" >RevCont</a>
+		</div>
+		<h3>Scripture Union Nig</h3>
+	</div><!-- /footer -->
+</div><!-- /page7 -->
+
+<!-- Start of Page 8- MySongsIndex -->
+<div data-role="page" id="page8" >
+
+	<div data-role="header" id="pg8Header">
+		<a data-direction="reverse" href="#page7" class="ui-btn ui-icon-back ui-btn-icon-notext" id="pg8HeaderBtnL">back</a>
+		<h1>My Songs Index</h1>
+		<a href="#page9" class="ui-btn ui-icon-eye ui-btn-icon-notext" id="pg8HeaderBtnR">bars</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" id="pg8Main">
+		<form>
+	    <input id="filter-for-listview-pg8" data-type="search" Placeholder="	Type to search...">
+		</form>
+		<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview-pg8" id="mySongIndices">
+			
+		</ul>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed" id="pg8Footer">
+		<h4>Scripture Union Nig</h4>
+	</div><!-- /footer -->
+</div><!-- /page8 -->
+
+<!-- Start of Page9 My Songs Display Screen-->
+<div data-role="page" id="page9" >
+
+	<div data-role="header" data-position="fixed" id="pg9Header">
+		<div id="page9HeaderTitle">My Added Song View</div><a data-direction="reverse" href="#page8" class="ui-btn ui-icon-back ui-btn-icon-notext" id="pg9HeaderBtnL">back</a>
+
+		<div id="page9SongTitle">Song Title</div>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" id="pg9Main"> <!-- SCREEN DISPLAY -->
+		<div class="pg9SongDisplayCont">
+			<div id="pg9SongDisplay"> Song Solo
+			</div>
+		</div>
+
+		<!--
+		<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left" id="getContent" on>Get Content()</a>
+		<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left" id="fMySong" on>Format()</a>
+		-->
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" id="pg9Footer">
+		<h4>Scripture Union Nigeria</h4>
+	</div><!-- /footer -->
+</div><!-- /page9 -->
+
+</body>
+</html>
